@@ -1,9 +1,9 @@
-# 🔐 FUTURE_CS_01 – Vulnerability Assessment Report  
+#  FUTURE_CS_01 – Vulnerability Assessment Report  
 ### Future Interns – Cyber Security Internship (Feb-March 2026)
 
 ---
 
-## 👩‍💻 Intern Details
+##  Intern Details
 
 - **Name:** Sanita Salomon  
 - **Track:** Cyber Security  
@@ -12,7 +12,7 @@
 
 ---
 
-## 🎯 Task Objective
+##  Task Objective
 
 The objective of this task was to perform a structured vulnerability assessment on a legally permitted live test website using standard cybersecurity tools.
 
@@ -25,11 +25,11 @@ The goal was to:
 
 ---
 
-## 🌐 Target Website
+##  Target Website
 
 http://testphp.vulnweb.com  
 
-> ⚠️ Note: This is an intentionally vulnerable test website used strictly for educational and security testing purposes.
+>  Note: This is an intentionally vulnerable test website used strictly for educational and security testing purposes.
 
 ---
 
@@ -42,7 +42,7 @@ http://testphp.vulnweb.com
 
 ---
 
-## 📊 Risk Classification Overview
+##  Risk Classification Overview
 
 | Risk Level | Count |
 |------------|--------|
@@ -54,9 +54,9 @@ Most identified issues fall under the **Medium risk category**, primarily due to
 
 ---
 
-## 🔎 Key Findings Summary
+##  Key Findings Summary
 
-### 1️⃣ Unencrypted Communication (HTTP – Port 80)
+### 1.Unencrypted Communication (HTTP – Port 80)
 
 - Website operates over HTTP  
 - Data transmission is not encrypted  
@@ -71,7 +71,7 @@ Most identified issues fall under the **Medium risk category**, primarily due to
 
 ---
 
-### 2️⃣ Server Version Disclosure (nginx 1.19.0)
+### 2.Server Version Disclosure (nginx 1.19.0)
 
 - Server version revealed in HTTP headers  
 - Enables attackers to search for known exploits  
@@ -85,7 +85,7 @@ Most identified issues fall under the **Medium risk category**, primarily due to
 
 ---
 
-### 3️⃣ Missing Security Headers
+### 3.Missing Security Headers
 
 Missing headers:
 - X-Frame-Options  
@@ -105,7 +105,7 @@ Missing headers:
 
 ---
 
-### 4️⃣ Input Validation & CSRF Issues
+### 4.Input Validation & CSRF Issues
 
 - Forms do not visibly sanitize inputs  
 - No visible CSRF protection  
@@ -121,7 +121,7 @@ Missing headers:
 
 ---
 
-### 5️⃣ Cookie Security Issues
+### 5.Cookie Security Issues
 
 - Cookies not marked as Secure  
 - HttpOnly attribute missing  
@@ -136,7 +136,7 @@ Missing headers:
 
 ---
 
-### 6️⃣ Deprecated Components (Flash)
+### 6.Deprecated Components (Flash)
 
 - Flash components detected  
 
@@ -148,7 +148,7 @@ Missing headers:
 
 ---
 
-### 7️⃣ Insecure Cross-Domain Configuration
+### 7.Insecure Cross-Domain Configuration
 
 - clientaccesspolicy.xml allows wildcard (*) access  
 - crossdomain.xml overly permissive  
